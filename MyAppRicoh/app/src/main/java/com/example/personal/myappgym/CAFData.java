@@ -6,7 +6,7 @@
 //  Copyright © 2015 Cesar Franco. All rights reserved.
 //
 
-package com.example.estudiantes.appphoto;
+package com.example.personal.myappgym;
 
 
 import android.graphics.Bitmap;
