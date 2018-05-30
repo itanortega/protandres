@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itebd"
+        android:title="Multifuncionales Laser" />
+    <item
+        android:id="@+id/itead"
+        android:title="Impresoras para producción" />
+    <item
+        android:id="@+id/iteft"
+        android:title="Proyectores" />
+    <item
+        android:id="@+id/itecd"
+        android:title="Videoconferencia" />
+    <item
+        android:id="@+id/iterv"
+        android:title="Pizarra interactiva" />
+    <item
+        android:id="@+id/iteinst"
+        android:title="Cámaras" />
+    <item
+        android:id="@+id/iteabout"
+        android:title="Acerca de..." />
+
+</menu>
