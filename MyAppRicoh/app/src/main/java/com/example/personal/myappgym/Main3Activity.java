@@ -104,7 +104,7 @@ public class Main3Activity extends AppCompatActivity {
                     for (int i = 0; i < datosL.length(); i++) {
                         try {
                             registroJson = datosL.getJSONObject(i);
-                            articulos.add(new Articulo(i+1, registroJson.getString("referencia"),registroJson.getString("descripcion_es"),registroJson.getString("descripcion_en")));
+                            articulos.add(new Articulo(i+1, registroJson.getString("referencia"),registroJson.getString("descripcion_es"),registroJson.getString("descripcion_en"), LOCAL + registroJson.getString("referencia") + ".jpg"));
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
