@@ -31,6 +31,8 @@ public class AdapterArticulos extends RecyclerView.Adapter <AdapterArticulos.Art
     @Override
     public void onBindViewHolder(ArticuloViewHolder holder, int position) {
         holder.Cv_Referencia.setText(articulosList.get(position).getReferencia());
+        //if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){}
+
         //holder.Cv_Descripcion.setText(articulosList.get(position).getDescripcion());
         /*CAFData data = CAFData.dataWithContentsOfFile(palabras.get(position).getUrl());
 
