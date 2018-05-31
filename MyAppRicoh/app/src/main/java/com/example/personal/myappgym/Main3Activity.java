@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,6 +21,7 @@ public class Main3Activity extends AppCompatActivity {
 
     private static String LOCAL = "";
     private static String DOMAIN = "http://181.62.161.249:41062/www/ricoh/";
+    String rutaApi = "impresoras";
 
     RecyclerView Rv_MultifuncionalesLaser;
     LinearLayoutManager linearLayoutManager;
@@ -55,7 +55,7 @@ public class Main3Activity extends AppCompatActivity {
                 if (networkInfo != null){
                     URL urlArchivo = null;
                     try {
-                        urlArchivo = new URL(DOMAIN + "api.php?get=impresoras");
+                        urlArchivo = new URL(DOMAIN + "api.php?get=" + rutaApi);
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
@@ -66,7 +66,7 @@ public class Main3Activity extends AppCompatActivity {
                     if(urlArchivo != null) {
                         archivoData = CAFData.dataWithContentsOfURL(urlArchivo);
                         try {
-                            archivoData.writeToFile(LOCAL + "impresoras.json", true);
+                            archivoData.writeToFile(LOCAL + rutaApi + ".json", true);
 
                             JSONObject dataJson = new JSONObject(archivoData.toText());
                             JSONArray datosLista = dataJson.getJSONArray("data");
@@ -98,7 +98,7 @@ public class Main3Activity extends AppCompatActivity {
                 ArrayList<Articulo> articulos = new ArrayList<>();
                 Articulo a;
 
-                CAFData datoslocal = CAFData.dataWithContentsOfFile(LOCAL + "impresoras.json");
+                CAFData datoslocal = CAFData.dataWithContentsOfFile(LOCAL + rutaApi + ".json");
                 JSONObject registroJson;
                 try {
                     JSONObject dataJson = new JSONObject(datoslocal.toText());

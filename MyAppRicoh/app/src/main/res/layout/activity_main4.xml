@@ -19,40 +19,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ScrollView
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="40dp"
+            android:background="@mipmap/imgf"
+            android:text="@string/imp_produccion"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@mipmap/imgf"
-                    android:text="@string/imp_produccion"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/imageView16"
-                    android:layout_width="match_parent"
-                    android:layout_height="217dp" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="texto1"
-                    android:textSize="20dp" />
-
-            </LinearLayout>
-        </ScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Rv_Impresora_Produccion"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
