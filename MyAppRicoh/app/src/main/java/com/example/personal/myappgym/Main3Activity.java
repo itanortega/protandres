@@ -75,8 +75,12 @@ public class Main3Activity extends AppCompatActivity {
                                 try {
                                     JSONObject dato = datosLista.getJSONObject(i);
                                     String nombreImagen = dato.getString("referencia").toString() + ".jpg";
-                                    data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "imgs/" + nombreImagen));
-                                    data.writeToFile(LOCAL + nombreImagen, true);
+
+                                    CAFData imgData = CAFData.dataWithContentsOfFile(LOCAL + nombreImagen);
+                                    if(imgData == null){
+                                        data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "imgs/" + nombreImagen));
+                                        data.writeToFile(LOCAL + nombreImagen, true);
+                                    }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 } catch (MalformedURLException e) {
