@@ -15,10 +15,13 @@ public class AdapterArticulos extends RecyclerView.Adapter <AdapterArticulos.Art
 
     public List<Articulo> articulosList;
     public Context context;
+    String idioma = "es";
 
     public AdapterArticulos(List<Articulo> articulosList, Context context) {
         this.articulosList = articulosList;
         this.context = context;
+
+        //if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){}
     }
 
     @Override
@@ -31,9 +34,13 @@ public class AdapterArticulos extends RecyclerView.Adapter <AdapterArticulos.Art
     @Override
     public void onBindViewHolder(ArticuloViewHolder holder, int position) {
         holder.Cv_Referencia.setText(articulosList.get(position).getReferencia());
-        //if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){}
 
-        //holder.Cv_Descripcion.setText(articulosList.get(position).getDescripcion());
+        if(idioma.equals("es")){
+            holder.Cv_Descripcion.setText(articulosList.get(position).getDescripcion_es());
+        }else {
+            holder.Cv_Descripcion.setText(articulosList.get(position).getDescripcion_en());
+        }
+
         CAFData data = CAFData.dataWithContentsOfFile(articulosList.get(position).getUrl());
 
         if(data != null){

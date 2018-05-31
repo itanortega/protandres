@@ -96,11 +96,9 @@ public class Main3Activity extends AppCompatActivity {
 
                 CAFData datoslocal = CAFData.dataWithContentsOfFile(LOCAL + "impresoras.json");
                 JSONObject registroJson;
-
                 try {
                     JSONObject dataJson = new JSONObject(datoslocal.toText());
                     JSONArray datosL = dataJson.getJSONArray("data");
-
                     for (int i = 0; i < datosL.length(); i++) {
                         try {
                             registroJson = datosL.getJSONObject(i);
