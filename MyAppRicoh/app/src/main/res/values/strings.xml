@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">MyAppRicoh</string>
     <string name="prefijo_idioma">en</string>
+    <string name="CATÁLOGO">CATÁLOGO</string>
+    <string name="Bienvenido">Bienvenid@</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="prodser">PRODUCTOS Y SERVICIOS</string>
+    <string name="multilaser">Multifuncionales Laser</string>
+    <string name="imp_produccion">Impresoras para producción</string>
+    <string name="Proyectores">Proyectores</string>
+    <string name="Videoconferencia">Videoconferencia</string>
+    <string name="piz_int">Pizarra interactiva</string>
+    <string name="camaras">Cámaras</string>
+    <string name="acercade">Acerca de...</string>
 </resources>

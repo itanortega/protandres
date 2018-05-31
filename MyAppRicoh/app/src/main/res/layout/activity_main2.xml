@@ -70,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="MULTIFUNCIONALES LASER" />
+                        android:text="@string/multilaser" />
 
                 </LinearLayout>
 
@@ -92,7 +92,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="IMPRESORAS PARA PRODUCCION" />
+                        android:text="@string/imp_produccion" />
 
                 </LinearLayout>
 
@@ -112,7 +112,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="PROYECTORES" />
+                        android:text="@string/Proyectores" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -131,7 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="VIDEOCONFERENCIA" />
+                        android:text="@string/Videoconferencia" />
 
                 </LinearLayout>
 
@@ -151,7 +151,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="PIZARRA INTERACTIVA" />
+                        android:text="@string/piz_int" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -170,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="CAMARAS" />
+                        android:text="@string/camaras" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
