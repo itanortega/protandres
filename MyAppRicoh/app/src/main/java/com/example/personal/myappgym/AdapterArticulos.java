@@ -1,8 +1,10 @@
 package com.example.personal.myappgym;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,13 +17,13 @@ public class AdapterArticulos extends RecyclerView.Adapter <AdapterArticulos.Art
 
     public List<Articulo> articulosList;
     public Context context;
-    String idioma = "es";
+    String idioma;
 
     public AdapterArticulos(List<Articulo> articulosList, Context context) {
         this.articulosList = articulosList;
         this.context = context;
-
-        //if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){}
+        this.idioma = idioma;
+        idioma = context.getResources().getString(R.string.prefijo_idioma);
     }
 
     @Override
