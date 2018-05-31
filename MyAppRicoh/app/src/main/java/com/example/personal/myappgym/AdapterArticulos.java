@@ -34,14 +34,14 @@ public class AdapterArticulos extends RecyclerView.Adapter <AdapterArticulos.Art
         //if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){}
 
         //holder.Cv_Descripcion.setText(articulosList.get(position).getDescripcion());
-        /*CAFData data = CAFData.dataWithContentsOfFile(palabras.get(position).getUrl());
+        CAFData data = CAFData.dataWithContentsOfFile(articulosList.get(position).getUrl());
 
         if(data != null){
             Bitmap bitmap = data.toImage();
             if(bitmap != null){
                 holder.Cv_imagen.setImageBitmap(bitmap);
             }
-        }*/
+        }
     }
 
     @Override
