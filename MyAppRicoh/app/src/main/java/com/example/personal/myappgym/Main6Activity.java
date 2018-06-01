@@ -21,7 +21,7 @@ public class Main6Activity extends AppCompatActivity {
 
     private static String LOCAL = "";
     private static String DOMAIN = "http://181.62.161.249:41062/www/ricoh/";
-    String rutaApi = "impresoras";
+    String rutaApi = "videoconferencia";
 
     RecyclerView Rv_Videoconferencia;
     LinearLayoutManager linearLayoutManager;

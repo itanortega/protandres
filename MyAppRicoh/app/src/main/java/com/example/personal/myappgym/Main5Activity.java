@@ -21,7 +21,7 @@ public class Main5Activity extends AppCompatActivity {
 
     private static String LOCAL = "";
     private static String DOMAIN = "http://181.62.161.249:41062/www/ricoh/";
-    String rutaApi = "impresoras";
+    String rutaApi = "proyectores";
 
     RecyclerView Rv_Proyectores;
     LinearLayoutManager linearLayoutManager;
