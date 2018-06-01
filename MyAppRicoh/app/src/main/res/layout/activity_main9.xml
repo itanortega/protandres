@@ -49,6 +49,14 @@
             android:textSize="18dp"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DAVID MAYAG"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/imageView19"
             android:layout_width="match_parent"

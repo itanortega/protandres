@@ -11,4 +11,6 @@
     <string name="Proyectores">Proyectores</string>
     <string name="Videoconferencia">Videoconferencia</string>
     <string name="piz_int">Pizarra interactiva</string>
+    <string name="camaras">Cámaras</string>
+    <string name="acercade">Acerca de ...</string>
 </resources>
